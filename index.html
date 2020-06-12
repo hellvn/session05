@@ -27,11 +27,11 @@
             margin-bottom: 5px;
 
         }
-        img{
+        .image{
             border-radius: 50%;
             -moz-border-radius: 50%;
             -webkit-border-radius: 50%;
-            margin-bottom: auto;
+            padding: 200px 425px 200px 425px;
         }
         #head-link{
             height: 100px;
@@ -72,11 +72,12 @@
 <body>
 <div id="main">
     <div id="head">
-        <img src="images/profile.jpg" border="2px" height="168" width="168" align="middle">
+        <div class="image"><img src="images/profile.jpg" height="168" width="168" align="middle">
+        </div>
     </div>
     <div id="head-link">
         <h1 align="middle" style="color: white">Hoàng Minh Vương</h1>
-        <marquee direction="up"><div style="color: white" align="middle">画虎画皮 难画骨. 知人 知面 不知心</div></marquee>
+        <marquee direction="up"><div style="color: white" align="middle"><font size="5">画虎画皮 难画骨. 知人 知面 不知心</font></div></marquee>
     </div>
     <div id="left">
         <h3>Giới thiệu</h3>
@@ -94,8 +95,19 @@
         <img src="images/trollface.gif" alt="">
     </div>
     <div id="right">
-        <img src="images/trollface.gif" alt="">
-        <img src="images/trollface.gif" alt="">
+        <h3>Donate:</h3>
+        <td>
+            <select>
+                <option value="">select...</option>
+                <option value="">Creditcard</option>
+                <option value="">Cash</option>
+            </select>
+        </td>
+        <tr>
+            <td>Total Amount:</td>
+            <td><input type="text"></td>
+        </tr>
+        <input type="button" onclick="Thank you!();" name="ok" value="Donate"/>
     </div>
     <div id="footer"></div>
 </div>
